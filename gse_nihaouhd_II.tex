@@ -1,0 +1,300 @@
+\documentclass[fleqn,usenatbib]{mnras}
+
+\usepackage{newtxtext,newtxmath}
+\usepackage[T1]{fontenc}
+\DeclareRobustCommand{\VAN}[3]{#2}
+\let\VANthebibliography\thebibliography
+\def\thebibliography{\DeclareRobustCommand{\VAN}[3]{##3}\VANthebibliography}
+
+
+%%%%% PACKAGES %%%%%
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{aliascnt}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{gensymb}
+\usepackage{CJK}
+\usepackage{tabularx}
+\usepackage{orcidlink}
+\usepackage{fontawesome}
+\usepackage[normalem]{ulem}
+\hypersetup{
+    unicode, 
+    colorlinks=true,
+    linkcolor=linkcolor,
+    citecolor=linkcolor,
+    filecolor=linkcolor,
+    urlcolor=linkcolor,
+}
+\definecolor{linkcolor}{rgb}{0.0,0.3,0.5}
+
+%%%%% COMMANDS %%%%%
+\newcommand{\SB}[1]{{\textcolor{purple}{SB: #1}}}
+\newcommand{\comment}[1]{\textcolor{lightgray}{#1}}
+
+\newcommand{\asa}{\textcolor{teal}}
+\newcommand{\asac}[1]{\color{teal}[ÁS: #1] \color{black}}
+\newcommand{\asams}[1]{\textcolor{magenta}{\sout{#1}}}
+\newcommand{\asam}{\textcolor{magenta}}
+\newcommand{\asas}[1]{\textcolor{teal}{\sout{#1}}}
+\newcommand{\mkn}[1]{\textbf{\textcolor{blue}{MKN: #1}}}
+
+\defcitealias{Buder2025c}{Paper~I}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{document}
+\title[A golden thread through time and space II]{A golden thread through time and space: The chemodynamical memory of a major merger in a simulated NIHAO-UHD Milky Way analogue II\thanks{NIHAO-UHD is the Ultra High Definition re-run of a Milky Way analogue from the \textit{Numerical Investigation of a Hundred Astronomical Objects} (NIHAO) suite \citep{Wang2015}.}}
+
+\author[S. Buder et al.]{Sven Buder,$^{1}$\thanks{E-mail: sven.buder@anu.edu.au}\thanks{Australian Research Council DECRA Fellow}\orcidlink{0000-0002-4031-8553}
+Tobias Buck,$^{2,3}$\orcidlink{0000-0003-2027-399X}
+Ása Skúladóttir,$^{4}$\orcidlink{0000-0001-9155-9018}
+Melissa Ness,$^{1}$\orcidlink{0000-0001-5082-6693}
+Madeleine McKenzie,$^{5}$\thanks{NASA Hubble Fellow}\orcidlink{0000-0002-1715-1257}
+and\newauthor
+Stephanie Monty$^{6, 7}$\orcidlink{0000-0002-9225-5822}
+\\
+$^{1}$Research School of Astronomy and Astrophysics, Australian National University, Canberra, ACT 2611, Australia\\
+$^{2}$Universit{\"a}t Heidelberg, Interdisziplin{\"a}res Zentrum f{\"u}r Wissenschaftliches Rechnen, Im Neuenheimer Feld 205, D-69120 Heidelberg, Germany\\
+$^{3}$Universit{\"a}t Heidelberg, Zentrum f{\"u}r Astronomie, Institut f{\"u}r Theoretische Astrophysik, Albert-Ueberle-Straße 2, D-69120 Heidelberg, Germany\\
+$^{4}$Dipartimento di Fisica e Astronomia, Universitá degli Studi di Firenze, Via G. Sansone 1, I-50019 Sesto Fiorentino, Italy\\
+$^{5}$The Observatories of the Carnegie Institution for Science, 813 Santa Barbara Street, Pasadena, 91101, CA, USA\\
+$^{6}$Institute of Astronomy, University of Cambridge, Madingley Road, Cambridge CB3 0HA, UK\\
+$^{7}$Department of Astronomy, New Mexico State University, Las Cruces, NM 88003, USA
+}
+
+% These dates will be filled out by the publisher
+\date{Accepted DD MM 2025. Received DD MM 2025; in original form DD MM 2025}
+
+% Prints the current year, for the copyright statements etc. To achieve a fixed year, replace the expression with a number. 
+\pubyear{\the\year{}}
+
+% Don't change these lines
+\begin{document}
+\label{firstpage}
+\pagerange{\pageref{firstpage}--\pageref{lastpage}}
+\maketitle
+
+\begin{abstract} % 249 words, 1708 characters with space
+%Understanding how the Milky Way's present-day structure — including its thin and thick disc populations — was shaped by processes such as past major mergers is a key goal of galactic archaeology. The chemical and dynamical structure of the Milky Way retains the imprint of such ancient events, including a major accretion episode around 8–10 Gyr ago. Recent findings suggest that present-day orbital energy correlates with stellar chemistry and birth location within the merging progenitor galaxy. Using a high-resolution, cosmological zoom-in NIHAO-UHD simulation of a Milky Way analogue, we trace the birth positions, ages, and present-day orbits of stars accreted in its last major merger. Comparing birth and present-day positions of older in-situ stars, we find negligible splashing/heating of their stellar orbits. Stars born in the accreted galaxy’s core are more tightly bound to the Milky Way and element-enhanced, while those from the outskirts are more weakly bound and less chemically enriched. This supports the scenario proposed by Skúladóttir et al. (2025) using idealised N-body simulations, now demonstrated in a cosmological context. The chemodynamical evolution within the accreted galaxy is also evident in elemental planes such as [Al/Fe] vs. [Mg/Mn], reflecting gradients in star formation efficiency and history. Our results reveal that spatial and temporal memory is preserved across the merger -- connecting birth locations to present-day properties like a golden thread. These findings imply that selecting only stars with higher orbital energies or radial actions risks systematically biased reconstructions of the progenitor galaxy, underestimating its total stellar mass, chemical enrichment, and role in shaping the early Milky Way.
+One of the most debated consequences of the Milky Way’s last major merger is the existence of the so-called \textit{Splash}: stars with disc-like chemistry but halo-like kinematics, interpreted as evidence for the violent heating of an early protodisc. Using the same high-resolution NIHAO-UHD cosmological simulation analysed in \citetalias{Buder2025c}, we investigate whether a Splash-like population arises naturally in a Milky Way analogue. By tracing stellar birth positions and present-day orbits, we find no evidence for widespread dynamical \textit{splashing} of in-situ stars. Instead, protodisc stars were already born on dynamically hot orbits, with the transition to a rotation-supported disc occurring only during or after the merger. The observed Splash may therefore reflect a thick, turbulent early disc, mixed with accreted stars and stars formed from merger-driven gas inflows, rather than a distinct, merger-heated population. These results highlight the need for a more nuanced interpretation of the Splash, where kinematics, chemistry, and formation history jointly contribute to the observed distribution of stars.
+\end{abstract}
+
+\begin{keywords}
+% {
+Galaxy: evolution -- Galaxy: formation -- Galaxy: structure -- Galaxy: abundances -- Galaxy: kinematics and dynamics
+% }
+\end{keywords}
+
+% \maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+\label{sec:introduction}
+
+A long-standing goal of Galactic archaeology is to reconstruct how mergers shaped the early Milky Way. 
+Thanks to \textit{Gaia} astrometry \citep{Brown2021b} and large spectroscopic surveys, it is now clear that the Galaxy experienced at least one major accretion event about 8--10~Gyr ago, commonly referred to as the \textit{Gaia}-Sausage-Enceladus (GSE) merger \citep{Belokurov2018, Helmi2018, Naidu2020}. 
+This event left an imprint in the stellar halo, and growing evidence suggests that it also heated a pre-existing disc, dynamically mixing the earliest in-situ populations with accreted debris.
+
+One of the most debated manifestations of this process is the so-called \textit{Splash} population \citep{Belokurov2020, Belokurov2022}. These stars appear to occupy an intermediate regime: chemically similar to the early disc, yet kinematically hotter and extending into halo-like orbits. Observational studies have argued that such stars record the violent heating of the protodisc during GSE. Other interpretations invoke a combination of in-situ heating, star formation triggered by gas mixing, or even misclassified accreted stars, leaving the nature of the Splash unresolved. Understanding whether the Splash represents a distinct population, or merely the overlap of several processes, is therefore key to reconstructing the Milky Way’s early disc and merger history.
+
+In \citet[][hereafter \citetalias{Buder2025c}]{Buder2025c}, we used the NIHAO-UHD cosmological simulations \citep{Buck2020, Buck2021} to examine the chemodynamical memory of a major merger. We quantified the efficiency of recovering accreted stars in integrals-of-motion space and assessed how much information about stellar birth positions and chemical evolution is preserved. Those results established the broader simulation framework and highlighted both the opportunities and limitations in interpreting observational phase-space substructures.
+
+In the present paper (Paper~II), we build directly on that framework to focus specifically on the Splash. We ask whether a population analogous to the observationally claimed Splash arises in a fully cosmological Milky Way analogue, and if so, how it can be distinguished from both accreted stars and stars formed from merger-mixed gas. 
+Our guiding questions are:
+\begin{enumerate}[leftmargin=2em,labelwidth=0em]
+    \item Does a distinct Splash population emerge in a high-resolution cosmological simulation?
+    \item What are its chemodynamical properties, and how do they compare to observationally defined Splash stars?
+    \item What does the simulated Splash imply for interpreting the Milky Way’s merger-driven history?
+\end{enumerate}
+
+By confronting the observational concept of the Splash with a cosmological simulation, we provide the first test of whether this debated component naturally emerges from a realistic galaxy assembly history.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Simulation data}
+\label{sec:data}
+
+We use the same high-resolution cosmological zoom-in simulation analysed in \citetalias{Buder2025c}, namely the NIHAO-UHD Milky Way analogue \texttt{g8.26e11} \citep{Wang2015, Buck2020b, Buck2021}. This model was chosen because it closely resembles the Milky Way in global properties (halo mass, stellar mass, rotation curve, and a disc-dominated morphology) and experienced a last major merger $\sim 8.5$~Gyr ago, broadly consistent with the timing inferred for the Galaxy’s \textit{Gaia}-Sausage-Enceladus event \citep{Helmi2018, Naidu2020}. A full description of the simulation setup, feedback and enrichment prescriptions, and comparison to Milky Way constraints is given in \citetalias{Buder2025c}.
+
+For the present work, two aspects of the post-processed simulation are most relevant.  
+First, we trace the birth positions of stars in discrete $100\,\mathrm{Myr}$ time steps relative to the evolving centre of mass of the main halo. This enables us to distinguish in-situ stars from those accreted during mergers.  
+Second, we calculate orbital energies and approximate actions ($J_R$, $L_Z$, $J_Z$) using the \textsc{agama} package \citep{Vasiliev2019b}, as described in \citetalias{Buder2025c}. These integrals of motion allow us to characterise present-day stellar orbits and to connect them to observational diagnostics used to identify Splash candidates in the Milky Way.
+
+In the following, we focus on whether the simulation produces a population of stars that resembles the observed Splash, i.e. stars born in the early disc but subsequently heated onto halo-like orbits, and how such stars can be distinguished from accreted or merger-driven populations.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Analysis: The merger process and its chemodynamical effects} \label{sec:analysis}
+
+In \citetalias{Buder2025c}, we analysed the NIHAO-UHD Milky Way analogue with a focus on three key aspects: a broad classification of stars into in-situ and accreted populations (Section~3.1 of \citetalias{Buder2025c}), the dynamical properties of these stars and the efficiency of selecting accreted populations in integrals-of-motion space (Section~3.2 of \citetalias{Buder2025c}), and the extent to which birth positions and chemical evolution are retained as chemodynamical memory (Section~3.3 of \citetalias{Buder2025c}). 
+
+Here, we build on this framework to concentrate specifically on the merger process itself. Our aim is to assess whether the simulation produces a population analogous to the observationally claimed \textit{Splash}: stars born in the early disc but dynamically heated onto halo-like orbits, stars formed from merger-driven gas mixing, or stars that may be misclassified accreted populations. By linking these possibilities back to the classification, dynamical, and chemical analyses of \citetalias{Buder2025c}, we investigate whether the Splash emerges as a distinct component or as the overlap of several processes.
+
+\subsection{Infall}
+
+ Based on Fig.~\ref{fig:tracing_xyz_birth_3}b and tracking the orbits of the accreted stars born within $50\,\mathrm{kpc}$ of the main galaxy, we can calculate the inclination angle $\theta$ of the merger (with larger inclination meaning a more edge-on rather than face-on trajectory) to be between $34$ and $55\,\mathrm{deg}$, based on a singular value decomposition in three dimensions or a linear fit in $X_\mathrm{birth}$ vs. $Z_\mathrm{birth}$, respectively. While this value is roughly comparable to the inclination of $\theta = 30\,\mathrm{deg}$ proposed by \citet{Naidu2021} based on simulations with multiple inclination and circularity values, we note that the pattern or stars on significantly more prograde orbits matches less well with the patterns of typically low absolute angular momenta observed in the Milky Way and simulated for a merger with circularity $\eta = 0.5$. Our orbit pattern rather matches the simulation outcome by \citet{Naidu2021} for a highly circular galaxy with $\eta = 0.9$ (see their Fig.~3). We refrain from interpreting this, however, as there are more particular merger parameters that might play an important role for energy and momentum transfer. This includes how the path along which the merging galaxy spiralled into the larger galaxy relative to the galactic plane (see $X$-$Y$ in Fig.~\ref{fig:tracing_xyz_birth_3}a), as well as the locations of passages through this plane.
+
+We can, however, study the kinematic/dynamical effect on already born in-situ stars as well as the chemodynamic effect on stars that formed during the merger.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\columnwidth]{figures/splash_feh_vphi.png}
+    \caption{{Iron abundance [Fe/H]} vs. azimuthal velocity $V_\varphi$ for stars within $R_\mathrm{3D} < 50\,\mathrm{kpc}$ (left panels) and the Solar-like locus (right panels). Individual rows show all stars (top), in-situ stars (middle) and accreted stars (bottom). Black rectangles with letters A-F at their lower left corner annotate the selection of different subsamples of the Solar neighbourhood \href{https://github.com/svenbuder/gse_nihaouhd/tree/main/figures}{\faGithub}.}
+    \label{fig:splash_feh_vphi}
+\end{figure}
+
+\subsection{Properties of Splash-like stars}
+
+Based on a population of stars in the Solar neighbourhood that are more metal-rich than typical halo stars yet follow highly eccentric orbits, \citet{Belokurov2020} proposed that these stars originated in the Milky Way’s disc and were "splashed" onto low-angular-momentum orbits during the last major merger. Motivated by this hypothesis, we analyse stars in our Milky Way analogue in the same plane as \citet{Belokurov2020}, namely $\mathrm{[Fe/H]}$ vs. azimuthal velocity $V_\varphi$, both for the entire galaxy and for a Solar neighbourhood-like region (see Fig.~\ref{fig:splash_feh_vphi}).
+
+We indeed find a strikingly similar distribution in $\mathrm{[Fe/H]}$ vs. $V_\varphi$ space (Figs.~\ref{fig:splash_feh_vphi}a and \ref{fig:splash_feh_vphi}d) to that observed by \citet{Belokurov2020}. Metal-poor in-situ stars exhibit a broad spread in azimuthal velocity, up to $\pm 300\,\mathrm{km\,s^{-1}}$) centred around $V_\varphi = 0\,\mathrm{km\,s^{-1}}$. As metallicity increases, the stellar density rises and peaks around $-0.4 < \mathrm{[Fe/H]} < 0.1$. At higher [Fe/H], we observe a steep increase in the average $V_\varphi$ and a narrowing of its distribution to $200 \pm 100\,\mathrm{km\,s^{-1}}$, indicating that the most metal-rich stars are on rotationally supported disc orbits. However, \citet{Belokurov2020} identified the overdensity associated with the Splash population at slightly lower metallicities, $-0.7 < \mathrm{[Fe/H]} < -0.25$, in the Milky Way's Solar neighbourhood.
+
+In observations, the interpretation of the [Fe/H]-$V_\varphi$ plane is complicated by uncertainties in stellar ages and the unknown birth locations of stars. In contrast, our simulation allows us to overcome these limitations by providing both precise stellar ages and a clear distinction between in-situ and accreted stars. Taking advantage of this, we define several subsamples of the Solar neighbourhood (Sample A, Fig.~\ref{fig:splash_feh_vphi}d) to probe the nature of the Splash population. Sample D (Fig.~\ref{fig:splash_feh_vphi}e) selects in-situ stars consistent with the Splash as defined by \citet{Belokurov2020}, that is, those with $-0.4 < \mathrm{[Fe/H]} < 0.1$ and $-75 < V_\varphi < 100\,\mathrm{km\,s^{-1}}$. More generally, we then define:
+\begin{itemize}[leftmargin=2em,labelwidth=2em]
+    \item Sample A: all stars in the Solar neighbourhood (Fig.~\ref{fig:splash_feh_vphi}d) \\
+    and from within this region we sub-select (Fig.~\ref{fig:splash_feh_vphi}e,f):
+    \item Sample B: more metal-rich in-situ stars ($\mathrm{[Fe/H]} > 0.1$),
+    \item Sample C: in-situ stars with Splash-like [Fe/H] but higher $V_\varphi$,
+    \item Sample D: the Splash stars themselves,
+    \item Sample E: more metal-poor in-situ stars ($\mathrm{[Fe/H]} < -0.4$), and
+    \item Sample F: accreted stars in the Solar neighbourhood.
+\end{itemize}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\columnwidth]{figures/splash_age.png}
+    \caption{Age distribution of different samples of stars in the Solar neighbourhood as selected in the $\mathrm{[Fe/H]}$ vs. $V_\varphi$ plane of Fig.~\ref{fig:splash_feh_vphi}. A grey bar indicates the time of the major merger around $8.6\,\mathrm{Gyr}$ \href{https://github.com/svenbuder/gse_nihaouhd/tree/main/figures}{\faGithub}.}
+    \label{fig:splash_age}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\columnwidth]{figures/splash_alfe_mgmn.png}
+    \caption{Abundance distribution in [Al/Fe] vs. [Mg/Mn] of different samples of stars in the Solar neighbourhood as selected in the $\mathrm{[Fe/H]}$ vs. $V_\varphi$ plane of Fig.~\ref{fig:splash_feh_vphi}. An inset figure is showing the distribution of samples C and D with ages of $9-11\,\mathrm{Gyr}$ \href{https://github.com/svenbuder/gse_nihaouhd/tree/main/figures}{\faGithub}.}
+    \label{fig:splash_alfe_mgmn}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\columnwidth]{figures/splash_vphi_distribution.png}
+    \caption{Distributions of [Fe/H] and $V_\varphi$ for stars in the Solar neighbourhood at $-0.4 < \mathrm{[Fe/H]} < 0.1$. We show the stacked distribution (black lines) as well as 2-dimensional and 1-dimensional histograms of each distribution.
+    \href{https://github.com/svenbuder/gse_nihaouhd/tree/main/figures}{\faGithub}.}
+    \label{fig:splash_vphi_distribution}
+\end{figure}
+
+We note that \citet{Belokurov2020} did not specifically select in-situ stars for their Splash sample. In the Milky Way analogue, however, we only find stars fitting the Splash selection criteria to be born in-situ (compare Figs.~\ref{fig:splash_feh_vphi}e and \ref{fig:splash_feh_vphi}f in the Splash region). As remarked before, we find the accreted stars of the Milky Way analogue moving with higher azimuthal velocities of \input{tex/splash_analysis_accreted_vphi} within the Solar neighbourhood (Fig.~\ref{fig:splash_feh_vphi}f), as compared to values of $V_\varphi = 20_{-70}^{+100}\,\mathrm{km\,s^{-1}}$ for \textit{GSE} stars within the Milky Way's Solar neighbourhood \citep{Buder2022}, but also higher than values of the Splash stars in the simulations.
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.997\textwidth]{figures/splash_rbirth_zbirth}
+    \caption{Density distribution of birth positions in galactocentric cylindrical coordinates $R_\mathrm{birth, 2D}$ and $Z_\mathrm{birth}$ for stars that are currently in the Solar neighbourhood (black circles) of $2\,\mathrm{kpc}$ around $R_\mathrm{2D} = 8.2\,\mathrm{kpc}$. Each panel shows the subsamples A-F as noted in the panel text. For panels e) and f) we note the present but statistically insignificant imprint of our imperfect selection of in-situ vs. accreted stars via $\vert Z_\mathrm{birth} \vert > 5\,\mathrm{kpc}$ (Eqs.~\ref{eq:selection_past_accretion} and \ref{eq:selection_insitu}) \href{https://github.com/svenbuder/gse_nihaouhd/tree/main/figures}{\faGithub}.}
+    \label{fig:splash_rbirth_zbirth}
+\end{figure*}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\columnwidth]{figures/splash_rz_birth_now.png}
+    \caption{Radial and vertical distribution of Splash stars. Panel a) shows birth radii $R_\mathrm{birth, 2D}$ and birth heights $Z_\mathrm{birth}$, whereas panel b) shows current radii $R_\mathrm{2D}$ and heights $Z$. Text insets show the median and 16th to 84th percentiles of each distribution
+    \href{https://github.com/svenbuder/gse_nihaouhd/tree/main/figures}{\faGithub}.}
+    \label{fig:splash_rz_birth_now}
+\end{figure}
+
+Before we take a look at possible changes to the dynamics and spatial distribution of these stars, we get an idea of their typical ages and chemistry in Figs.~\ref{fig:splash_age} and \ref{fig:splash_alfe_mgmn}, respectively. In both spaces, we see the Splash stars arranged along a sequence. They extend from the oldest and most [Al/Fe]-poor in-situ stars, the metal-poor ones (\input{tex/splash_analysis_age_sample_E}), to younger Splash stars (\input{tex/splash_analysis_age_sample_D}) with higher [Al/Fe]. From there, the sequence continues to still younger stars (\input{tex/splash_analysis_age_sample_C}), which have similar [Fe/H] but higher $V_\varphi$ and [Al/Fe] and lower [Mg/Mn]. Finally, it reaches the youngest and most metal-rich in-situ stars (\input{tex/splash_analysis_age_sample_B}). Furthermore, we note that the accreted stars with ages of \input{tex/splash_analysis_age_sample_F} are for the most part older or at least as old as the Splash stars. This finding of (F older than D older than C) is consistent with the observations by \citet{Belokurov2020}. In particular, we also find that the \textit{splash-like} stars are exclusively old, corroborating that they indeed could come from a splash-like event. We also note that while there are stars with chemical compositions literally bridging the accreted (blue) and in-situ (red) populations, this bridge connects at the low [Mg/Mn]-end of the Splash star region. As already noted by \citet{Buder2024}, these stars are likely formed from mixed gas during the merger, but do not contribute significantly to any of the sub-samples of the simulation's Solar neighbourhood.
+
+More strikingly, we note only a little overlap in the distribution of ages and chemistry of the most metal-poor in-situ stars with the Splash stars within the Solar neighbourhood, which implies a quite rapid evolution of [Fe/H] around $10\,\mathrm{Gyr}$ ago. The age distribution of the Splash stars (Sample D) is consistent with the oldest stars of the in-situ population with similar [Fe/H] but higher $V_\varphi$ than the Splash stars (Sample C) and shows a similar profile especially for ages of $9-11\,\mathrm{Gyr}$.
+
+This result opens up a number of questions that evolve around the question of how special the Splash stars are -- both in terms of their chemistry as well as their orbits. While \citet{Belokurov2020} favoured a scenario, in which the stars have been splashed up, they also discussed a scenario in which the stars might have been born dynamically hotter with more eccentric orbits. One could for example imagine these stars being the low azimuthal velocity tail of a dynamically hotter early disc.
+
+We are thus following up the sample of stars with similar iron abundance ($-0.4 < \mathrm{[Fe/H]} < 0.1$) and the aforementioned ages of $9-11\,\mathrm{Gyr}$. In particular, we are interested in a comparison of properties of the low azimuthal velocity (Splash) stars with $V_\varphi < 75\,\mathrm{km\,s^{-1}}$ and their higher azimuthal velocity counterpart. We show their distribution in a [Fe/H] vs. $V_\varphi$ diagram in Fig.~\ref{fig:splash_vphi_distribution} and notice that their distribution both in 2-dimensions as well as each individual dimension appear rather smooth. In particular the distribution in $V_\varphi$ appears normal-distributed with a slight positive skewness. We have thus used the \textsc{skewnorm} functionality of the \textsc{scipy.stats} module \citep{Scipy} to fit a skewed normal distribution to the data, finding a distribution around $79 \pm 65\,\mathrm{km\,s^{-1}}$ with a positive skewness of $\gamma_1$ between 0.35 and 0.51 when using \textsc{skew} or \textsc{skewnorm}, respectively. In addition, we have also looked into the chemical enrichment of the low- and high-$V_\varphi$ samples, in particular [Al/Fe] and [Mg/Mn]. The samples are visually congruent with each other (see inset of Fig.~\ref{fig:splash_alfe_mgmn}) and distributed in the region of Fig.~\ref{fig:splash_alfe_mgmn} of sample D. To statistically assess whether the two 2-dimensional distributions are drawn from the same underlying population, we apply the Maximum Mean Discrepancy test \citep{Gretton2012} using the \textsc{hyppo} package's \textsc{ksample.MMD} \citep{hyppo}. The resulting test statistic of $10^{-6}$ with a $p$-value of 0.26 indicates no significant difference between the two samples. For reference, Kolmogorov–Smirnov tests \citep{Hodges1958} applied independently to the 1D marginals via \textsc{scipy.stats.ks\_2samp} also yield high $p$-values of 1.0 and 0.86. This leads to the conclusion that both the high $V_\varphi$ and low $V_\varphi$ Splash stars are drawn (born?) from the same distribution with a large spread in $V_\varphi$.
+
+To further establish, where -- and by proxy on which orbits -- the Splash stars were born, we analyse their and the other samples' birth positions in Fig.~\ref{fig:splash_rbirth_zbirth}. The simulation makes remarkable predictions about the origin of stars that are currently residing in a small Solar neighbourhood-like region, with stars visiting from the centre of the galaxy or its furthest outskirts at $20\,\mathrm{kpc}$ (see Fig.~\ref{fig:splash_rbirth_zbirth}a) -- not to mention the accreted stars born even further away (Fig.~\ref{fig:splash_rbirth_zbirth}f). In agreement with radial migration models \citep[for example][]{Frankel2018, Frankel2020}, a significant amount of metal-rich stars (Fig.~\ref{fig:splash_rbirth_zbirth}b) is visiting from the inner galaxy (with 5-95th percentiles of $R_\mathrm{birth, 2D} \sim 3.9 - 8.9\,\mathrm{kpc}$ centred around a median of $6.3\,\mathrm{kpc}$), while high-$V_\varphi$ stars with Solar-like iron abundances (sample C) show a larger distribution of birth origins along the disc ($R_\mathrm{birth, 2D} \sim 3.5-12.5\,\mathrm{kpc}$, centred around $7.4\,\mathrm{kpc}$). However, both the in-situ Splash ($R_\mathrm{birth, 2D} \sim 2.2-7.8\,\mathrm{kpc}$, centred around $4.6\,\mathrm{kpc}$) and the in-situ metal-poor stars ($R_\mathrm{birth, 2D} \sim 1.0-9.7\,\mathrm{kpc}$, centred around $2.9\,\mathrm{kpc}$) are basically born exclusively in the inner galaxy ($R_\mathrm{birth, 2D} \ll 8.2\,\mathrm{kpc}$) and with a larger spread of $Z_\mathrm{birth}$, that is, not on a thinner disc.
+
+Since the Splash stars were born further inwards, the question arises, whether they were born on more radially eccentric orbits which reach into our Solar neighbourhood, or if their orbits have significantly changed through the radial splashing that shifts their initially inner orbits to overlap with our Solar neighbourhood. Because our snapshot at redshift $z = 0$ only includes the present-day velocities, we turn to a comparison of birth and present-day spatial distribution in Fig.~\ref{fig:splash_rz_birth_now} in an effort to quantify the change of spatial distributions which would imply a change of orbits. When comparing the birth (upper panel) with present-day (lower panel) density distributions in linear density, we note a more extended low-density envelope to higher radii. Similarly, we note an extend of larger $Z$-coverage for $R_\mathrm{2D} > 6\,\mathrm{kpc}$ -- again with very low densities. The overall distribution of stars has, however, changed insignificantly. This is evident in the only minor change of \input{tex/r2d_birth_latex} to \input{tex/r2d_latex} and \input{tex/z_birth_latex} to \input{tex/z_latex}. In our particular Milky Way analogue simulation, this thus implies little orbit change of these stars, or no significant splashing, with a possible exception of stars beyond $R_\mathrm{2D} > 3.9\,\mathrm{kpc}$, the outermost $16\,\mathrm{\%}$ of Splash stars (the 84th percentile of $R_\mathrm{birth,2D}$). We discuss the implications of this finding in Section~\ref{sec:discussion}.
+
+\subsection{Effect on newly forming stars}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=\textwidth]{figures/trace_star_formation_xy_xz_feh_selection.png}
+    \caption{Distributions of iron abundances {[Fe/H]} for the face-on ($X_\mathrm{birth}$ vs. $Y_\mathrm{birth}$, odd rows) and edge-on ($X_\mathrm{birth}$ vs. $Z_\mathrm{birth}$, even rows) views in ten selected birth epochs within $0.5\,\mathrm{Gyr}$, starting from $12.5-13.0\,\mathrm{Gyr}$ in the top-left panel to $0.0-0.5\,\mathrm{Gyr}$ in the bottom-right panel. Dashed black arrows indicate the path of the last major merger. See \href{https://github.com/svenbuder/gse_nihaouhd/tree/main/figures}{\faGithub} for figures with all epochs as well as colouring by density.}
+    \label{fig:trace_star_formation_xy_xz_feh_selection}
+\end{figure*}
+
+Although the main focus of our study is understanding the memory of accreted stars, we want to briefly investigate the potential of the available birth positions to study the evolution of the main galaxy's density and chemical enrichment during and after the merging. For this purpose, we investigate the change of iron abundance [Fe/H] in birth positions in both the $X_\mathrm{birth}$ vs. $Y_\mathrm{birth}$ and $X_\mathrm{birth}$ vs. $Z_\mathrm{birth}$ dimensions in Fig.~\ref{fig:trace_star_formation_xy_xz_feh_selection}, with each panel showing the median iron abundance in each bin for stars formed within a selection of 10 star formation epochs that each span $0.5\,\mathrm{Gyr}$. We remind ourselves that because birth positions are estimated in $0.1\,\mathrm{Gyr}$, we expect the footprint of the major accretion to mimic up to five smaller galaxies, which in fact are showing the position of the same smaller galaxy in $0.1\,\mathrm{Gyr}$ steps (see especially the panels around $9.5-10.0\,\mathrm{Gyr}$ in these figures).
+
+From these figures we can assess that the stars of the early main galaxy were born on typically random orbits leading to a spheroidal galaxy shape and new stars following similar orbits until a lookback time of $\sim 10\,\mathrm{Gyr}$. Between $\sim10$ and $\sim 8.5\,\mathrm{Gyr}$ ago, we then see the birth positions follow a more and more disc-like structure with increasing radii and decreasing heights. For ages below $8\,\mathrm{Gyr}$, we then see star formation occurring within a rotationally supported disc. These observations are in agreement with the modelling by \citet{MCM2013} and the description of the \textit{spin-up} by \citet{Belokurov2022}. A detailed assessment of how the smaller galaxy’s gravitational influence and angular momentum transfer between $\sim10$ and $\sim8.5,\mathrm{Gyr}$ contributed to the spin-up of the Milky Way analogue’s disc requires tracing gas and dark matter in addition to stars, which we leave to future work.
+
+What we can investigate, however, is the change of star formation [Fe/H] during this time (see Fig.~\ref{fig:trace_star_formation_xy_xz_feh_selection}). Here we see that after the initial main galaxy started forming stars with $\mathrm{[Fe/H]} \leq -1.5$ (dark blue), its core quickly started forming more enhanced stars with the star formation $\mathrm{[Fe/H]}$ in the core rising from $-1.0$ to $-0.75$ between $\sim 12.5$ and $\sim11.5\,\mathrm{Gyr}$ ago, while more smaller amounts of metal-poor stars ($\mathrm{[Fe/H]} \leq -1.5$) where born outside of the core galaxy and quickly accreted. This process continues with star formation in the core reaching $\mathrm{[Fe/H]} \sim -0.2$ and the outskirts reaching $-0.35$ at a lookback time of $\sim 10\,\mathrm{Gyr}$. At this time, we notice the arrival of the major merger galaxy to within $30\,\mathrm{kpc}$ distance. Its path is indicated with dashed arrows as it continues to form stars in each $0.1\,\mathrm{Gyr}$ snapshot and finally merge with the main galaxy in a spiral pattern around $8.6\,\mathrm{Gyr}$ ago. For this galaxy, we also note a negative metallicity gradient from core to outskirts, but at lower metallicities than the main galaxy. Most importantly, we notice that while the metallicity of the major merger galaxy tends to still increase and reach $\mathrm{[Fe/H]} \sim -0.5$ until $\sim 8.5\,\mathrm{Gyr}$ ago, the main galaxy's star formation [Fe/H] seems to not decrease within the inner $R_\mathrm{birth,2D} < 10\,\mathrm{kpc}$ (compare the snapshots of $8.5-9.0\,\mathrm{Gyr}$ with $8.0-8.5\,\mathrm{Gyr}$ for that region). Only in the outskirts of the galaxy at $10 \lesssim R_\mathrm{birth, 2D} \lesssim 20\,\mathrm{kpc}$ do we note some patches of lower star formation [Fe/H]. We note that \citet{Buck2023} found considerable dips in the gas metallicity [Fe/H] this simulation during the merger. By comparison with Fig.~\ref{fig:fellowship_and_mount_doom}b, we can identify those as accreted structures as well, again underlining our impression of no lowering of star formation [Fe/H] during the merger. For all remaining epochs, we only notice a rather uneventful inside-out star formation with a radial metallicity gradient \citep[see also][]{Buder2025}.
+
+We discuss the implications of these findings in Section~\ref{sec:discussion}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Discussion: Dynamical and chemical effects of the merger}
+\label{sec:discussion}
+
+In \citetalias{Buder2025c}, we addressed questions of selection efficiency, strategies for identifying accreted stars, and the retention of chemical and birth-position memory in integrals-of-motion space. Here, we focus on the fourth question posed in that work: what can be inferred from the merger process itself about the dynamical effects on the early disc, in particular the proposed \textit{Splash}. We discuss whether the simulation produces a distinct Splash population, how it compares to the observationally claimed component, and what this implies for interpreting the Milky Way’s early merger history.
+
+We do not follow-up the gas inflow onto the Milky Way analogue nor the gas content of the major merger \citep[see for example][]{Agertz2021, Renaud2021b, Buck2023} in our this work,  but solely on the stellar component -- similar to the present-day observations of the Milky Way's past.
+
+The main focus was to use birth positions of in-situ and accreted stars to better understand the change from birth to present-day positions and by extension the dynamical impact of the merger, such as the proposed \textit{splashing} of the Milky Way's protodisc \citep{Belokurov2020}. Our analysis of the Splash stars with low azimuthal velocities and subsolar metallicities (Figs.~\ref{fig:splash_feh_vphi}-\ref{fig:splash_rz_birth_now}) suggested that these Splash stars are the ancient portion of the protodisc of our Galaxy -- in agreement with previous studies \citep{Bonaca2017, Haywood2018, DiMatteo2019, Gallart2019, Belokurov2020}. Similar to \citet{Belokurov2020}, we find that many of the Splash stars' properties bridge smoothly between their older and younger thick disk parts. We even find stars with the same chemical properties and stellar ages, but high $V_\varphi$, the prograde counterpart of the Splash stars. When comparing the birth positions of the Splash stars with their current positions in $R_\mathrm{2D}$ and $Z$, we have, however, not found significant changes and no significant signs of a \textit{splashing} in either direction. While we find a minor increase of the 84th percentile in $R_\mathrm{2D}$, this thus questions the significance of a \textit{splashing} or heating by massive accretion events\footnote{Unless we interpret these events as the many accretion events for lookback times greater than $\gtrsim 11.5\,\mathrm{Gyr}$ (see Fig.~\ref{fig:trace_star_formation_xy_xz_feh_selection} when the galaxy had a spheroidal shape.)} as proposed by \citet{Belokurov2020}. Our simulation in fact suggests that the Splash stars were already born on their dynamically hot orbits, which lead them to also enter the Solar neighbourhood through their lifetime.
+
+The galaxy in which the Splash stars were born was, however, not yet rotation dominated. In the simulation, the disk becomes only rotation dominated below a lookback time of $\sim 9.5\,\mathrm{Gyr}$, that is after the first $\sim 4.3\,\mathrm{Gyr}$. While both simulation work and observations \citep[for example][]{MCM2013} confirm that the Milky Way's stellar rotational velocity increased from 11 to $8\,\mathrm{Gyr}$ ago, the causality of this angular-momentum build-up with the major merger of the Milky Way is not proven. This could be further tested in the future with simulations. Quantifying the impact of mergers on angular momentum of galaxies is complex \citep[see for example][]{Lagos2017, Lagos2018}. It can certainly not be done by one singular simulation as ours due to the complicated dependence on merger configurations and pathways, but rather needs to be done based on a suite of simulations \citep[see for example][]{Pillepich2019, SotilloRamos2022}.
+
+As more observational information are emerging, it will be interesting to see how many/few viable formation scenarios we can pin down the growing diversity of simulation predictions for Milky Way analogues across chemical, dynamical, and evolutionary dimensions \citep{Brooks2025}. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusions}
+\label{sec:conclusions}
+
+In \citetalias{Buder2025c}, we established the framework for interpreting the last major merger of a Milky Way analogue, focusing on selection efficiency and the retention of chemodynamical memory. Here, we have used the same NIHAO-UHD simulation to investigate the proposed \textit{Splash} population.
+
+Our analysis shows no significant evidence for a large-scale dynamical \textit{splashing} of in-situ stars. Instead, protodisc stars—including those with present-day low azimuthal velocities—were already born on dynamically hot orbits. The transition to a rotation-supported disc occurs only during or after the merger. This suggests that much of the observed Splash may not represent disc stars violently heated by the merger, but rather stars formed in a thick, turbulent early disc, later mixed with accreted populations and stars born from merger-driven gas inflows.
+
+These findings imply that the interpretation of the Splash as a distinct, dynamically heated population may be overly simplistic. A more nuanced view is required, where kinematic, chemical, and formation histories jointly contribute to the observed distribution of stars. Cosmological simulations thus provide a crucial benchmark for evaluating whether the Splash emerges as a truly separate component or as the overlap of multiple processes during the Galaxy’s early assembly.
+
+% \clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Acknowledgments}
+
+We acknowledge the traditional owners of the land on which the ANU stands, the Ngunnawal and Ngambri people. We pay our respects to elders past, and present and are proud to continue their tradition of surveying the night sky and its mysteries to better understand our Universe. SB acknowledges support from the Australian Research Council under grant number DE240100150.
+TB's contribution to this project was made possible by funding from the Carl Zeiss Stiftung. \'{A}S~acknowledges funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement No. 101117455).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Data Availability}
+
+All code to reproduce the analysis and figures can be publicly accessed via \url{https://github.com/svenbuder/gse_nihaouhd}.
+
+The used simulation snapshot can be publicly accessed as FITS file via \url{https://github.com/svenbuder/preparing_NIHAO}. Original data, more snapshots and other galaxies can be found at \url{https://tobias-buck.de/#sim_data}. We encourage interested readers to get in contact with the authors for full data access and advice for use and cite \citet{Buck2020b, Buck2021}.
+
+\section*{Software}
+
+The research for this publication was coded in \textsc{python} (version 3.12.11) and included its packages
+\textsc{astropy} \citep[v. 7.1.0;][]{Robitaille2013,PriceWhelan2018},
+\textsc{hyppo} \citep[v. 0.5.2;][]{hyppo},
+\textsc{IPython} \citep[v. 9.1.0;][]{ipython},
+\textsc{matplotlib} \citep[v. 3.10.3;][]{matplotlib},
+\textsc{NumPy} \citep[v. 2.2.6;][]{numpy}, as well as
+\textsc{scipy} \citep[v. 1.16.0;][]{Scipy}.
+We further made use of \textsc{topcat} \citep[version 4.7;][]{Taylor2005};
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{mnras}
+\bibliography{bib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \clearpage
+%\appendix
+
+\bsp
+\label{lastpage}
+\end{document}
