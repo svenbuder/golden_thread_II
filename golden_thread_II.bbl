@@ -132,10 +132,12 @@
   {10.33232/001c.137295}, \href
   {https://ui.adsabs.harvard.edu/abs/2025OJAp....8E..47B} {8, 47}
 
-\bibitem[\protect\citeauthoryear{{Buder}, {Buck}, {Skuladottir}, {Ness},
+\bibitem[\protect\citeauthoryear{{Buder}, {Buck}, {Sk\'ulad\'ottir}, {Ness},
   {McKenzie}  \& {Monty}}{{Buder} et~al.}{2025b}]{Buder2025c}
-{Buder} S.,  {Buck} T.,  {Skuladottir} A.,  {Ness} M.~K.,  {McKenzie} M.,
-  {Monty} S.,  2025b, \mnras, in, review
+{Buder} S.,  {Buck} T.,  {Sk\'ulad\'ottir} A.,  {Ness} M.,  {McKenzie} M.,
+  {Monty} S.,  2025b, \mn@doi [arXiv e-prints] {10.48550/arXiv.2510.11284},
+  \href {https://ui.adsabs.harvard.edu/abs/2510arXiv251011284B}
+  {arXiv:2510.11284, Paper~I}
 
 \bibitem[\protect\citeauthoryear{{Chandra} et~al.,}{{Chandra}
   et~al.}{2024}]{Chandra2024}
@@ -210,6 +212,10 @@ Gretton A.,  Borgwardt K.~M.,  Rasch M.~J.,  Sch{{\"o}}lkopf B.,   Smola A.,
   {Khoperskov} S.,  2018, \mn@doi [\aap] {10.1051/0004-6361/201731363}, \href
   {https://ui.adsabs.harvard.edu/abs/2018A&A...618A..78H} {618, A78}
 
+\bibitem[\protect\citeauthoryear{{Helmi}}{{Helmi}}{2020}]{Helmi2020}
+{Helmi} A.,  2020, \mn@doi [\araa] {10.1146/annurev-astro-032620-021917}, \href
+  {https://ui.adsabs.harvard.edu/abs/2020ARA&A..58..205H} {58, 205}
+
 \bibitem[\protect\citeauthoryear{{Helmi}, {Babusiaux}, {Koppelman}, {Massari},
   {Veljanoski}  \& {Brown}}{{Helmi} et~al.}{2018}]{Helmi2018}
 {Helmi} A.,  {Babusiaux} C.,  {Koppelman} H.~H.,  {Massari} D.,  {Veljanoski}
@@ -222,6 +228,12 @@ Gretton A.,  Borgwardt K.~M.,  Rasch M.~J.,  Sch{{\"o}}lkopf B.,   Smola A.,
 
 \bibitem[\protect\citeauthoryear{Hunter}{Hunter}{2007}]{matplotlib}
 Hunter J.~D.,  2007, \mn@doi [Comput Sci Eng] {10.1109/MCSE.2007.55}, 9, 90
+
+\bibitem[\protect\citeauthoryear{{Jofr{\'e}}, {Heiter}  \&
+  {Soubiran}}{{Jofr{\'e}} et~al.}{2019}]{Jofre2019}
+{Jofr{\'e}} P.,  {Heiter} U.,   {Soubiran} C.,  2019, \mn@doi [\araa]
+  {10.1146/annurev-astro-091918-104509}, \href
+  {https://ui.adsabs.harvard.edu/abs/2019ARA&A..57..571J} {57, 571}
 
 \bibitem[\protect\citeauthoryear{{Kisku} et~al.,}{{Kisku}
   et~al.}{2025}]{Kisku2025}
