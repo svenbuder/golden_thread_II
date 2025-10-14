@@ -8,6 +8,8 @@ Sven Buder (ANU Canberra, sven.buder@anu.edu.au), Tobias Buck (IWR Heidelberg), 
 
 One of the most debated consequences of the Milky Way's last major merger is the so-called $Splash: stars with disc-like chemistry but halo-like kinematics, often interpreted as evidence for the violent heating of an early protodisc. Using the same high-resolution NIHAO-UHD cosmological simulation analysed in Buder et al. (2025b, hereafter Paper I), we test whether a Splash-like population arises naturally in a Milky Way analogue. By tracing stellar birth positions, ages, and present-day orbits, we find no evidence for widespread dynamical $splashing$ of in-situ stars. Instead, protodisc stars were already born on dynamically hot orbits, with the transition to a rotation-supported disc occurring only during or after the merger. The observed Splash may therefore reflect the turbulent early disc, subsequently intermixed with accreted stars and those formed from merger-driven gas inflows, rather than a distinct merger-heated population. Our results suggest an alternative to the proposed splashing, and highlight the need to disentangle the relative contributions of merger-induced heating and intrinsically hot disc formation in order to clarify the nature of Splash-like stars and their role in shaping the early Milky Way.
 
+## Main Figures
+
 <p align=center>
     <img src="https://github.com/svenbuder/golden_thread_II/blob/main/figures/splash_feh_vphi.png" alt="Iron abundance [Fe/H] vs. azimuthal velocity $V_\varphi$ for stars within $R_\mathrm{3D} < 50\mathrm{kpc}$ (left panels) and the Solar-like locus (right panels)" width="50%"/>
 </p>
