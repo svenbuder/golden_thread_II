@@ -323,6 +323,10 @@ P\'erez F.,  Granger B.~E.,  2007, \mn@doi [Comput Sci Eng]
 {Taylor} M.~B.,  2005, ASPC, \href
   {http://adsabs.harvard.edu/abs/2005ASPC..347...29T} {347, 29}
 
+\bibitem[\protect\citeauthoryear{{Vasiliev}}{{Vasiliev}}{2019}]{Vasiliev2019b}
+{Vasiliev} E.,  2019, \mn@doi [\mnras] {10.1093/mnras/sty2672}, \href
+  {https://ui.adsabs.harvard.edu/abs/2019MNRAS.482.1525V} {482, 1525}
+
 \bibitem[\protect\citeauthoryear{Virtanen et~al.,}{Virtanen
   et~al.}{2020}]{Scipy}
 Virtanen P.,  et~al., 2020, \mn@doi [Nature Methods]
