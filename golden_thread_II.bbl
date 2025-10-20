@@ -64,6 +64,12 @@
   {10.1093/mnras/staa876}, \href
   {https://ui.adsabs.harvard.edu/abs/2020MNRAS.494.3880B} {494, 3880}
 
+\bibitem[\protect\citeauthoryear{{Bland-Hawthorn} et~al.,}{{Bland-Hawthorn}
+  et~al.}{2025}]{BlandHawthorn2025}
+{Bland-Hawthorn} J.,  et~al., 2025, \mn@doi [arXiv e-prints]
+  {10.48550/arXiv.2502.01895}, \href
+  {https://ui.adsabs.harvard.edu/abs/2025arXiv250201895B} {p. arXiv:2502.01895}
+
 \bibitem[\protect\citeauthoryear{{Bonaca}, {Conroy}, {Wetzel}, {Hopkins}  \&
   {Kere{\v s}}}{{Bonaca} et~al.}{2017}]{Bonaca2017}
 {Bonaca} A.,  {Conroy} C.,  {Wetzel} A.,  {Hopkins} P.~F.,   {Kere{\v s}} D.,
@@ -366,6 +372,14 @@ P\'erez F.,  Granger B.~E.,  2007, \mn@doi [Comput Sci Eng]
 \bibitem[\protect\citeauthoryear{{Taylor}}{{Taylor}}{2005}]{Taylor2005}
 {Taylor} M.~B.,  2005, ASPC, \href
   {http://adsabs.harvard.edu/abs/2005ASPC..347...29T} {347, 29}
+
+\bibitem[\protect\citeauthoryear{{Tepper-Garc{\'\i}a}, {Bland-Hawthorn},
+  {Vasiliev}, {Agertz}, {Teyssier}  \& {Federrath}}{{Tepper-Garc{\'\i}a}
+  et~al.}{2024}]{TepperGarcia2024}
+{Tepper-Garc{\'\i}a} T.,  {Bland-Hawthorn} J.,  {Vasiliev} E.,  {Agertz} O.,
+  {Teyssier} R.,   {Federrath} C.,  2024, \mn@doi [\mnras]
+  {10.1093/mnras/stae2372}, \href
+  {https://ui.adsabs.harvard.edu/abs/2024MNRAS.535..187T} {535, 187}
 
 \bibitem[\protect\citeauthoryear{{Vasiliev}}{{Vasiliev}}{2019}]{Vasiliev2019b}
 {Vasiliev} E.,  2019, \mn@doi [\mnras] {10.1093/mnras/sty2672}, \href
