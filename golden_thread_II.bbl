@@ -139,12 +139,13 @@
   {10.33232/001c.137295}, \href
   {https://ui.adsabs.harvard.edu/abs/2025OJAp....8E..47B} {8, 47}
 
-\bibitem[\protect\citeauthoryear{{Buder}, {Buck}, {Sk\'ulad\'ottir}, {Ness},
-  {McKenzie}  \& {Monty}}{{Buder} et~al.}{2025b}]{Buder2025c}
-{Buder} S.,  {Buck} T.,  {Sk\'ulad\'ottir} A.,  {Ness} M.,  {McKenzie} M.,
-  {Monty} S.,  2025b, \mn@doi [arXiv e-prints] {10.48550/arXiv.2510.11284},
-  \href {https://ui.adsabs.harvard.edu/abs/2510arXiv251011284B}
-  {arXiv:2510.11284, Paper~I}
+\bibitem[\protect\citeauthoryear{{Buder}, {Buck}, {Sk{\'u}lad{\'o}ttir},
+  {Ness}, {McKenzie}  \& {Monty}}{{Buder} et~al.}{2025b}]{Buder2025c}
+{Buder} S.,  {Buck} T.,  {Sk{\'u}lad{\'o}ttir} {\'A}.,  {Ness} M.,  {McKenzie}
+  M.,   {Monty} S.,  2025b, \mn@doi [arXiv e-prints]
+  {10.48550/arXiv.2510.11284}, \href
+  {https://ui.adsabs.harvard.edu/abs/2025arXiv251011284B} {arXiv:2510.11284,
+  Paper~I}
 
 \bibitem[\protect\citeauthoryear{{Carrillo}, {Deason}, {Fattahi}, {Grand}  \&
   {Fragkoudi}}{{Carrillo} et~al.}{2025}]{Carrillo2025}
