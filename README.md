@@ -18,7 +18,7 @@ Figure: Iron abundance [Fe/H] vs. azimuthal velocity $V_\varphi$ for stars withi
 
 <p align=center>
     <img src="https://github.com/svenbuder/golden_thread_II/blob/main/figures/splash_age.png" alt="Age distribution of different samples of stars in the Solar neighbourhood as selected in the $\mathrm{[Fe/H]}$ vs. $V_\varphi$ plane." width="49%"/>  
-    <img src="https://github.com/svenbuder/golden_thread_II/blob/main/figures/splash_alfe_mgmn.png" alt="Abundance distribution in [Al/Fe] vs. [Mg/Mn] of different samples of stars in the Solar neighbourhood as selected in the $\mathrm{[Fe/H]}$ vs. $V_\varphi$ plane." width="49%"/>
+    <img src="https://github.com/svenbuder/golden_thread_II/blob/main/figures/splash_alfe_mgmn_extended.png" alt="Abundance distribution in [Al/Fe] vs. [Mg/Mn] of different samples of stars in the Solar neighbourhood as selected in the $\mathrm{[Fe/H]}$ vs. $V_\varphi$ plane." width="49%"/>
 </p>
 
 Figure left: Age distribution of different samples of stars in the Solar neighbourhood as selected in the $\mathrm{[Fe/H]}$ vs. $V_\varphi$ plane. A grey bar indicates the time of the major merger around $8.6\,\mathrm{Gyr}$.
@@ -38,7 +38,7 @@ Figure: Distributions of iron abundances [Fe/H] for the face-on ($X_\mathrm{birt
 
 ## In this repository
 
-The code to reproduce the analysis and figures of this repository can be found in the repository's Jupyter notebook [golden_thread_I.ipynb](https://github.com/svenbuder/golden_thread_I/blob/main/golden_thread_I.ipynb).
+The code to reproduce the analysis and figures of this repository can be found in the repository's Jupyter notebook [golden_thread_II.ipynb](https://github.com/svenbuder/golden_thread_II/blob/main/golden_thread_II.ipynb).
 The used simulation snapshot can be publicly accessed as FITS file via https://github.com/svenbuder/preparing_NIHAO. Original data, more snapshots and other galaxies can be found at https://tobias-buck.de/#sim_data. We encourage interested readers to get in contact with the authors for full data access and advice for use and cite [Buck et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020MNRAS.491.3461B) as well as [Buck et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.3365B).
 
 ## How to Cite
