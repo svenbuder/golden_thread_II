@@ -52,12 +52,12 @@ Please cite this work as follows:
     journal = {arXiv e-prints},
     year = 2025,
     month = oct,
-    pages = {arXiv:2510.XXXXX},
+    pages = {arXiv:2510.20233},
     archivePrefix = {arXiv},
-    eprint = {2510.XXXXX},
+    eprint = {2510.20233},
     keywords = {Galaxy: evolution -- Galaxy: formation -- Galaxy: structure -- Galaxy: abundances -- Galaxy: kinematics and dynamics},
-    doi = {10.48550/arXiv.2510.XXXXX},
+    doi = {10.48550/arXiv.2510.20233},
     primaryClass = {astro-ph.GA},
-    adsurl = {https://ui.adsabs.harvard.edu/abs/2510arXiv2510XXXXXB}
+    adsurl = {https://ui.adsabs.harvard.edu/abs/2510arXiv251020233B}
 }
 ```
