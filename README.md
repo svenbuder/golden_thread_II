@@ -6,7 +6,7 @@ Sven Buder (ANU Canberra, sven.buder@anu.edu.au), Tobias Buck (IWR Heidelberg), 
 
 ## Abstract
 
-One of the most debated consequences of the Milky Way's last major merger is the so-called $Splash: stars with disc-like chemistry but halo-like kinematics, often interpreted as evidence for the violent heating of an early protodisc. Using the same high-resolution NIHAO-UHD cosmological simulation analysed in Buder et al. (2025b, hereafter Paper I), we test whether a Splash-like population arises naturally in a Milky Way analogue. By tracing stellar birth positions, ages, and present-day orbits, we find no evidence for widespread dynamical $splashing$ of in-situ stars. Instead, protodisc stars were already born on dynamically hot orbits, with the transition to a rotation-supported disc occurring only during or after the merger. The observed Splash may therefore reflect the turbulent early disc, subsequently intermixed with accreted stars and those formed from merger-driven gas inflows, rather than a distinct merger-heated population. Our results suggest an alternative to the proposed splashing, and highlight the need to disentangle the relative contributions of merger-induced heating and intrinsically hot disc formation in order to clarify the nature of Splash-like stars and their role in shaping the early Milky Way.
+One of the most debated consequences of the Milky Way's last major merger is the so-called \textit{Splash}: stars with disc-like chemistry but halo-like kinematics, often interpreted as evidence for the violent heating of an early protodisc. Using the same high-resolution NIHAO-UHD cosmological simulation analysed in Buder et al. (2025b, hereafter Paper I), we test whether, and if so how, a Splash-like population arises in the Milky Way analogue. By tracing stellar birth positions, ages, and present-day orbits, we find that protodisc stars were already born on dynamically hot orbits, with no evidence for significant additional dynamical \textit{splashing} of these particular in-situ stars despite a 1:5 stellar mass merger. The observed Splash may therefore reflect the already turbulent early disc, subsequently intermixed with accreted stars and those formed from merger-driven gas inflows, rather than a distinct merger-heated population. When selecting stars with similar chemistry and age as the Splash-like ones, we find their azimuthal velocity distribution to be broad and positively skewed, with $V_\varphi = 73_{-59}^{+74}\,\mathrm{km\,s^{-1}}$. The transition to a rotation-supported disc with large azimuthal velocities occurs only during or after the merger. Our results suggest an alternative to the proposed splashing scenario and highlight the need to disentangle the relative contributions of merger-induced heating and intrinsically hot disc formation to clarify the nature of Splash-like stars and their role in shaping the early Milky Way.
 
 ## Main Figures
 
@@ -18,7 +18,7 @@ Figure: Iron abundance [Fe/H] vs. azimuthal velocity $V_\varphi$ for stars withi
 
 <p align=center>
     <img src="https://github.com/svenbuder/golden_thread_II/blob/main/figures/splash_age.png" alt="Age distribution of different samples of stars in the Solar neighbourhood as selected in the $\mathrm{[Fe/H]}$ vs. $V_\varphi$ plane." width="49%"/>  
-    <img src="https://github.com/svenbuder/golden_thread_II/blob/main/figures/splash_alfe_mgmn.png" alt="Abundance distribution in [Al/Fe] vs. [Mg/Mn] of different samples of stars in the Solar neighbourhood as selected in the $\mathrm{[Fe/H]}$ vs. $V_\varphi$ plane." width="49%"/>
+    <img src="https://github.com/svenbuder/golden_thread_II/blob/main/figures/splash_alfe_mgmn_extended.png" alt="Abundance distribution in [Al/Fe] vs. [Mg/Mn] of different samples of stars in the Solar neighbourhood as selected in the $\mathrm{[Fe/H]}$ vs. $V_\varphi$ plane." width="49%"/>
 </p>
 
 Figure left: Age distribution of different samples of stars in the Solar neighbourhood as selected in the $\mathrm{[Fe/H]}$ vs. $V_\varphi$ plane. A grey bar indicates the time of the major merger around $8.6\,\mathrm{Gyr}$.
@@ -38,7 +38,7 @@ Figure: Distributions of iron abundances [Fe/H] for the face-on ($X_\mathrm{birt
 
 ## In this repository
 
-The code to reproduce the analysis and figures of this repository can be found in the repository's Jupyter notebook [golden_thread_I.ipynb](https://github.com/svenbuder/golden_thread_I/blob/main/golden_thread_I.ipynb).
+The code to reproduce the analysis and figures of this repository can be found in the repository's Jupyter notebook [golden_thread_II.ipynb](https://github.com/svenbuder/golden_thread_II/blob/main/golden_thread_II.ipynb).
 The used simulation snapshot can be publicly accessed as FITS file via https://github.com/svenbuder/preparing_NIHAO. Original data, more snapshots and other galaxies can be found at https://tobias-buck.de/#sim_data. We encourage interested readers to get in contact with the authors for full data access and advice for use and cite [Buck et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020MNRAS.491.3461B) as well as [Buck et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.3365B).
 
 ## How to Cite
@@ -52,12 +52,12 @@ Please cite this work as follows:
     journal = {arXiv e-prints},
     year = 2025,
     month = oct,
-    pages = {arXiv:2510.XXXXX},
+    pages = {arXiv:2510.20233},
     archivePrefix = {arXiv},
-    eprint = {2510.XXXXX},
+    eprint = {2510.20233},
     keywords = {Galaxy: evolution -- Galaxy: formation -- Galaxy: structure -- Galaxy: abundances -- Galaxy: kinematics and dynamics},
-    doi = {10.48550/arXiv.2510.XXXXX},
+    doi = {10.48550/arXiv.2510.20233},
     primaryClass = {astro-ph.GA},
-    adsurl = {https://ui.adsabs.harvard.edu/abs/2510arXiv2510XXXXXB}
+    adsurl = {https://ui.adsabs.harvard.edu/abs/2510arXiv251020233B}
 }
 ```
