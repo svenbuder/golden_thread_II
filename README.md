@@ -1,4 +1,6 @@
-# The chemodynamical memory of a major merger in a NIHAO-UHD Milky Way analogue II: Were Splash stars heated or already born hot?
+# The chemodynamical memory of a major merger in a NIHAO-UHD Milky Way analogue - II. Were Splash stars heated or already born hot?
+
+Accepted for publication in MNRAS.
 
 ## Authors
 
@@ -6,7 +8,7 @@ Sven Buder (ANU Canberra, sven.buder@anu.edu.au), Tobias Buck (IWR Heidelberg), 
 
 ## Abstract
 
-One of the most debated consequences of the Milky Way's last major merger is the so-called \textit{Splash}: stars with disc-like chemistry but halo-like kinematics, often interpreted as evidence for the violent heating of an early protodisc. Using the same high-resolution NIHAO-UHD cosmological simulation analysed in Buder et al. (2025b, hereafter Paper I), we test whether, and if so how, a Splash-like population arises in the Milky Way analogue. By tracing stellar birth positions, ages, and present-day orbits, we find that protodisc stars were already born on dynamically hot orbits, with no evidence for significant additional dynamical \textit{splashing} of these particular in-situ stars despite a 1:5 stellar mass merger. The observed Splash may therefore reflect the already turbulent early disc, subsequently intermixed with accreted stars and those formed from merger-driven gas inflows, rather than a distinct merger-heated population. When selecting stars with similar chemistry and age as the Splash-like ones, we find their azimuthal velocity distribution to be broad and positively skewed, with $V_\varphi = 73_{-59}^{+74}\,\mathrm{km\,s^{-1}}$. The transition to a rotation-supported disc with large azimuthal velocities occurs only during or after the merger. Our results suggest an alternative to the proposed splashing scenario and highlight the need to disentangle the relative contributions of merger-induced heating and intrinsically hot disc formation to clarify the nature of Splash-like stars and their role in shaping the early Milky Way.
+One of the most debated consequences of the Milky Way's last major merger is the so-called \textit{Splash}: stars with disc-like chemistry but halo-like kinematics, often interpreted as evidence for the violent heating of an early protodisc. Using the same high-resolution NIHAO-UHD cosmological simulation analysed in Paper~I, we test whether, and if so how, a Splash-like population arises in the Milky Way analogue. By tracing stellar birth positions, ages, and present-day orbits, we find that protodisc stars were already born on dynamically hot orbits, with only limited additional dynamical \textit{splashing} of these particular in-situ stars despite a 1:5 stellar mass merger. A subset of stars, particularly those that end up in the Solar neighbourhood, shows evidence for merger-driven angular-momentum redistribution, but the overall kinematic distribution of stars with Splash-like chemistry remains largely unchanged. The observed Splash may therefore primarily reflect the already turbulent early disc, subsequently intermixed with accreted stars and those formed from merger-driven gas inflows, rather than a distinct merger-heated population. When selecting stars with similar chemistry and age as the Splash-like ones, we find their azimuthal velocity distribution to be broad and positively skewed, with $V_\varphi = 73_{-59}^{+74}\,\mathrm{km\,s^{-1}}$. The transition to a rotation-supported disc with large azimuthal velocities occurs only during or after the merger. Our results suggest an alternative to the proposed splashing scenario and highlight the need to disentangle the relative contributions of merger-induced heating and intrinsically hot disc formation to clarify the nature of Splash-like stars and their role in shaping the early Milky Way.
 
 ## Main Figures
 
@@ -48,7 +50,7 @@ Please cite this work as follows:
 ```bibtex
 @article{Buder2025,
     author = {{Buder}, Sven and {Buck}, Tobias and {Sk\'ulad\'ottir}, \'Asa and {Ness}, Melissa and {McKenzie}, Madeleine and {Monty}, Stephanie},
-    title = {The chemodynamical memory of a major merger in a NIHAO-UHD Milky Way analogue II: A golden thread through time and space},
+    title = {The chemodynamical memory of a major merger in a NIHAO-UHD Milky Way analogue -- II. Were Splash stars heated or already born hot?},
     journal = {arXiv e-prints},
     year = 2025,
     month = oct,
